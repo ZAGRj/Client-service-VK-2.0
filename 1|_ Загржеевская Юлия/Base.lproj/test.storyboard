@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Form Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginFormController" customModule="____Загржеевская_Юлия" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLH-Mk-LMI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВКонтакте" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="125" translatesAutoresizingMaskIntoConstraints="NO" id="zLr-pY-1Lg">
+                                        <rect key="frame" x="144.5" y="115" width="125" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGz-6O-UWy">
+                                        <rect key="frame" x="125" y="180" width="49" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-g3-dEe">
+                                        <rect key="frame" x="125" y="209" width="164" height="34"/>
+                                        <color key="tintColor" red="0.34901960780000002" green="0.49019607840000001" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="164" id="9wl-NW-LqW"/>
+                                            <constraint firstAttribute="height" constant="34" id="Kb4-wy-o6A"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Логин">
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="labelColor"/>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpL-W9-Enf">
+                                        <rect key="frame" x="125" y="259" width="59" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Пароль" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B8h-iI-1v8">
+                                        <rect key="frame" x="125" y="296" width="164" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="164" id="ZtM-TL-V5N"/>
+                                            <constraint firstAttribute="height" constant="34" id="uQ4-8r-hTX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mi8-nM-ISr">
+                                        <rect key="frame" x="162.5" y="357" width="89" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="89" id="8W4-7Z-12C"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="CnT-3T-NQW"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.21915672519007603" green="0.40771308523409366" blue="0.80115327380952384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Войти">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ez-Qx-a4K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16d-rL-KqW">
+                                        <rect key="frame" x="136.5" y="396" width="141" height="32"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Забыли пароль?">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="15" name="PTSans-Caption"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehM-PV-i9E">
+                                        <rect key="frame" x="98" y="484" width="218" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="218" id="3NI-4F-sn6"/>
+                                            <constraint firstAttribute="height" constant="31" id="8f9-Bs-qBK"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.26666668059999998" green="0.40392160420000001" blue="0.77647060160000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Зарегистрироваться"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы ещё не зарегистрированны?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnV-se-XyF">
+                                        <rect key="frame" x="98" y="459" width="218" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zLr-pY-1Lg" firstAttribute="top" secondItem="NLH-Mk-LMI" secondAttribute="top" constant="115" id="0yN-Tg-X83"/>
+                                    <constraint firstItem="MdR-g3-dEe" firstAttribute="top" secondItem="bGz-6O-UWy" secondAttribute="bottom" constant="8" id="57N-ml-ryF"/>
+                                    <constraint firstItem="mi8-nM-ISr" firstAttribute="top" secondItem="B8h-iI-1v8" secondAttribute="bottom" constant="27" id="5JP-WQ-KhN"/>
+                                    <constraint firstAttribute="trailing" secondItem="DpL-W9-Enf" secondAttribute="trailing" constant="230" id="7bT-vi-Kme"/>
+                                    <constraint firstItem="16d-rL-KqW" firstAttribute="centerX" secondItem="NLH-Mk-LMI" secondAttribute="centerX" id="9U1-o4-fyY"/>
+                                    <constraint firstItem="rnV-se-XyF" firstAttribute="top" secondItem="16d-rL-KqW" secondAttribute="bottom" constant="31" id="JAx-wq-CPT"/>
+                                    <constraint firstItem="DpL-W9-Enf" firstAttribute="top" secondItem="MdR-g3-dEe" secondAttribute="bottom" constant="16" id="OIi-7F-2Ol"/>
+                                    <constraint firstAttribute="trailing" secondItem="MdR-g3-dEe" secondAttribute="trailing" constant="125" id="Ops-1E-Vz0"/>
+                                    <constraint firstItem="bGz-6O-UWy" firstAttribute="top" secondItem="zLr-pY-1Lg" secondAttribute="bottom" constant="33" id="R1v-Gz-G1y"/>
+                                    <constraint firstItem="ehM-PV-i9E" firstAttribute="centerX" secondItem="NLH-Mk-LMI" secondAttribute="centerX" id="VNI-li-grg"/>
+                                    <constraint firstAttribute="trailing" secondItem="B8h-iI-1v8" secondAttribute="trailing" constant="125" id="VhN-TO-YxV"/>
+                                    <constraint firstItem="16d-rL-KqW" firstAttribute="top" secondItem="mi8-nM-ISr" secondAttribute="bottom" constant="8" id="VyI-ci-Z1d"/>
+                                    <constraint firstItem="mi8-nM-ISr" firstAttribute="centerX" secondItem="NLH-Mk-LMI" secondAttribute="centerX" id="dno-LA-zrz"/>
+                                    <constraint firstItem="rnV-se-XyF" firstAttribute="centerX" secondItem="NLH-Mk-LMI" secondAttribute="centerX" id="ici-FH-Kih"/>
+                                    <constraint firstItem="B8h-iI-1v8" firstAttribute="top" secondItem="DpL-W9-Enf" secondAttribute="bottom" constant="16" id="lqG-w2-kqW"/>
+                                    <constraint firstItem="ehM-PV-i9E" firstAttribute="top" secondItem="rnV-se-XyF" secondAttribute="bottom" constant="8" symbolic="YES" id="tM3-5F-bts"/>
+                                    <constraint firstAttribute="trailing" secondItem="zLr-pY-1Lg" secondAttribute="trailing" constant="144.5" id="unn-rE-hFd"/>
+                                    <constraint firstItem="zLr-pY-1Lg" firstAttribute="centerX" secondItem="NLH-Mk-LMI" secondAttribute="centerX" id="vUL-G1-Cfj"/>
+                                    <constraint firstAttribute="trailing" secondItem="bGz-6O-UWy" secondAttribute="trailing" constant="240" id="y4l-Ng-vVq"/>
+                                    <constraint firstAttribute="bottom" secondItem="ehM-PV-i9E" secondAttribute="bottom" constant="381" id="zaq-lf-94d"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="qdH-IB-OYX"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="CPC-5C-O8f"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.34901960784313724" green="0.49019607843137253" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="16d-rL-KqW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3Vw-4q-T8X"/>
+                            <constraint firstItem="NLH-Mk-LMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Pf-Ed-F46"/>
+                            <constraint firstItem="mi8-nM-ISr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="76h-aY-KnH"/>
+                            <constraint firstItem="NLH-Mk-LMI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GGx-Kt-XJR"/>
+                            <constraint firstItem="NLH-Mk-LMI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GHW-tb-xFQ"/>
+                            <constraint firstItem="rnV-se-XyF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LO7-eG-qyc"/>
+                            <constraint firstItem="ehM-PV-i9E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PAe-f8-bL9"/>
+                            <constraint firstItem="NLH-Mk-LMI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QUg-Au-yQZ"/>
+                            <constraint firstItem="NLH-Mk-LMI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dRp-K0-Dh3"/>
+                            <constraint firstAttribute="bottom" secondItem="NLH-Mk-LMI" secondAttribute="bottom" id="ezv-qD-rb5"/>
+                            <constraint firstAttribute="bottom" secondItem="NLH-Mk-LMI" secondAttribute="bottom" id="k4G-T7-rho"/>
+                            <constraint firstItem="NLH-Mk-LMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mdl-lo-9p8"/>
+                            <constraint firstItem="NLH-Mk-LMI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nbO-vt-vNB"/>
+                            <constraint firstItem="zLr-pY-1Lg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v1S-g2-luD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="LoginInput" destination="MdR-g3-dEe" id="T4c-PQ-UJk"/>
+                        <outlet property="PasswordInput" destination="B8h-iI-1v8" id="l7p-Bj-iiD"/>
+                        <outlet property="ScrollView" destination="NLH-Mk-LMI" id="tdR-Xq-Crn"/>
+                        <outlet property="SingIn" destination="ehM-PV-i9E" id="H1T-FC-2IV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
